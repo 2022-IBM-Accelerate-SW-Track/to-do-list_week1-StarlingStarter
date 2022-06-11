@@ -1,5 +1,6 @@
 import React from "react";
 import "../component/todos.css";
+import {Card,CardContent,Grid,ListItemButton,ListItemText,CheckBox} from "@mui/material";
 
 // 1. This component formats and returns the list of todos.
 // 2. Treat the question mark like an if statement.
@@ -16,20 +17,23 @@ const Todos = ({ todos }) => {
             <Card>
               {/* Remember, we set the local state of this todo item when the user submits the form in 
               AddTodo.js. All we need to do is return the todo list item */}
+              {Todos}
               <CardContent>
-                <span style={{ padding: "50px" }}>add todo content</span>
+                <span style={{ padding: "50px" }}>You have no todo's left</span>
               </CardContent>
             </Card>
           </Grid>
         );
       })
     ) : (
-      <p>{/*Enter your message here if todo list is empty*/}</p>
+      /*<p>{Enter your message here if todo list is empty}</p>*/
+      <p>{"Your Todo list is empty"}</p>
     );
     // Lastly, return the todoList constant that we created above to show all of the items on the screen.
     return (
       <div className="todoCollection" style={{ padding: "10px" }}>
         {/*call todo list here*/}
+        {Todos}
       </div>
     );
 };
