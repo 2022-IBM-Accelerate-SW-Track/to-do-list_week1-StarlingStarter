@@ -25,7 +25,7 @@ export default class About extends Component {
             <table>
               <tr>
               <td>
-                Merit Badges:
+                Merit Badges
                 <ul>
                   <li>Cooking</li>
                   <li>Camping</li>
@@ -33,13 +33,21 @@ export default class About extends Component {
                   <li>Swimming</li>
                 </ul>
               </td>
+              
               <td>
-                Hobbies:
+              &nbsp;
+              &nbsp;
+              &nbsp;
+              &nbsp;
+              </td>
+
+              <td>
+                Hobbies
                   <ul>
-                    <li>Cooking</li>
-                    <li>Camping</li>
-                    <li>Coding</li>
-                    <li>Swimming</li>
+                    <li>test 0</li>
+                    <li>test 1</li>
+                    <li>test 2</li>
+                    <li>test 3</li>
                   </ul>
                 </td>
               </tr>
